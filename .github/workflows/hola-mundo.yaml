@@ -17,5 +17,8 @@ jobs:
       with:
         python-version: "3.10"
 
-    - name: script-runing
+    - name: List directory
+      run: ls -R
+
+    - name: Run Python script
       run: python src/hello_world.py
