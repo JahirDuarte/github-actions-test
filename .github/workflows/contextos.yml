@@ -5,6 +5,6 @@ on:
 jobs:
   check-main:
     if: ${{ github.ref == 'refs/heads/main' }}
-    run-on: ubuntu-latest
+    runs-on: ubuntu-latest
     steps:
       - run: echo "Desplegando en la rama $GITHUB_REF en el repositorio ${{ github.repository }}"
